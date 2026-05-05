@@ -2,10 +2,9 @@
 
 import css from "./NoteForm.module.css";
 import { useId } from "react";
-import { type Note, NoteTag, NewNoteData } from "../../types/note";
+import { NoteTag, type NewNoteData } from "../../types/note";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { createNote } from "../../lib/api";
-import { Form } from "formik";
 import { useNoteStore } from "@/lib/store/noteStore";
 import { useRouter } from "next/navigation";
 
@@ -22,6 +21,7 @@ export default function NoteForm() {
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["notes"] });
       clearDraft();
+      router.push("/notes/filter/all");
     },
   });
 
