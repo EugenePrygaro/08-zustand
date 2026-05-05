@@ -12,7 +12,9 @@ const NotesSidebar = async () => {
   return (
     <ul className={css.menuList}>
       <li className={css.menuItem}>
-        <Link href="/notes/action/create">Create note</Link>
+        <Link href="/notes/action/create" className={css.menuLink}>
+          Create note
+        </Link>
       </li>
       <li className={css.menuItem}>
         <Link href={`/notes/filter/all`} className={css.menuLink}>

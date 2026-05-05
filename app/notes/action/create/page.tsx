@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         alt: "NoteHub - Your Personal Note Management App",
       },
     ],
-    url: "https://notehub.com/notes/create",
+    url: "https://08-zustand-umber-seven.vercel.app/notes/action/create",
   },
 };
 export default function CreateNote() {

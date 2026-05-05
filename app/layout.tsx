@@ -30,6 +30,7 @@ export const metadata: Metadata = {
         alt: "NoteHub - Your Personal Note Management App",
       },
     ],
+    url: "https://08-zustand-umber-seven.vercel.app",
   },
   twitter: {
     card: "summary_large_image",
